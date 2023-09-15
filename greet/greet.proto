@@ -9,3 +9,9 @@ message SayHelloRequest { string name = 1; }
 message SayHelloResponse { string greet = 1; }
 
 service Greeting { rpc SayHello(SayHelloRequest) returns(SayHelloResponse); }
+
+message SignRequest { string name = 1; }
+
+message SignResponse { string greet = 1; }
+
+service SigningService { rpc Sign(SignRequest) returns(SignResponse); }
